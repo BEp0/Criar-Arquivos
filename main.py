@@ -1,10 +1,12 @@
 def criar_arquivo():
     
     while True:
+        
         iniciar = int(input('\nNúmero inicial: '))
         final = int(input('Número final: '))
         
         # obriga ao inicial ser menor que o final
+
         if not iniciar > final:
             break
         else:
@@ -16,10 +18,10 @@ def criar_arquivo():
 
 
     for i in range(iniciar, final + 1):
-        print(i, end=' ')
+        print(i, end=' ') # mostra no terminal
         destino_escrever = open(f'{destino_dado}/ex{i}{formato}', 'w' )
 
-    
+
     print('\n')    
     destino_escrever.close()
         
